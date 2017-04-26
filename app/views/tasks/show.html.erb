@@ -6,14 +6,21 @@
     <td><%= @task.id %></td>
   </tr>
   <tr>
-    <th>タスク</th>
-    <td><%= @task.status %></td>
+   
+   <th>タスク</th>
+    <td><%= @task.content %></td
+   
   </tr>
   <tr>
+   
     <th>ステータス</th>
-    <td><%= @task.content %></td>
+    <td><%= @task.status %></td>
+   
   </tr>
 </table>
 <%= link_to '一覧に戻る', tasks_path %>
 <%= link_to 'このタスクを編集する', edit_task_path(@task) %>
 <%= link_to 'このタスクを削除する', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+
+
+>
